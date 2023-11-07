@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Times New Roman', serif;
     margin: 0;
@@ -107,12 +106,12 @@ a:hover {
 
 .texto h1 {
     text-align: left;
-    
+
 }
 
 .texto p {
     text-align: left;
-    
+
 
 }
 
@@ -238,7 +237,7 @@ button {
     padding-left: 40px;
     text-align: center;
     align-items: center;
-   
+
 
 
 }
@@ -356,8 +355,8 @@ footer a {
 }
 
 .opciones {
-    margin-top: 20px; 
-    
+    margin-top: 20px;
+
 
 }
 
@@ -368,26 +367,27 @@ footer a {
 }
 
 .opciones3 {
-    width: 100%; border-top: 1px solid #000;
-    margin-top: 10px; 
-    
-    
+    width: 100%;
+    border-top: 1px solid #000;
+    margin-top: 10px;
+
+
 }
 
- .primero {
+.primero {
     margin-top: 35%;
     display: inline;
 }
 
-.primero tr{
+.primero tr {
     display: inline-block;
     line-height: 2em;
     box-sizing: border-box;
-    
+
 }
 
 .primero td {
-     width: 10%;
+    width: 10%;
     font-size: 18px;
     line-height: 2em;
     box-sizing: border-box;
@@ -400,7 +400,7 @@ footer a {
     color: #0D22E8;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 17, 255, 0.5);
 
-    
+
 
 }
 
@@ -417,5 +417,4 @@ footer a {
     justify-content: center;
 
 }
-
 
