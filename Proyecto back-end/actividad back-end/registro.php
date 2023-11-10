@@ -12,7 +12,7 @@
 <body>
     
     <header>
-        <h1>Credy</h1>
+        <h1>Credy </h1>
     </header>
    
     <section id="main-contain">
