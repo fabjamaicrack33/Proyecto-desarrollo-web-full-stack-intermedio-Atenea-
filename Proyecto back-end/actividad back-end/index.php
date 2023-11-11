@@ -178,7 +178,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/script_menu.js"></script>
+    
 </body>
 
 </html>

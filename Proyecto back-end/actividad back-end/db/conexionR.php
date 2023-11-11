@@ -14,19 +14,19 @@ if ($conexion->connect_error) {
 
 // Recuperar los datos del formulario
 $names = $_POST['names'];
-$lastname = $_POST['lastname'];
+$lastnames = $_POST['lastnames'];
 $birth = $_POST['birth'];
 $id_person = $_POST['id_person'];
 $email = $_POST['email'];
 $pass = $_POST['pass'];
 
 // Insertar los datos en la base de datos
-$sql = "INSERT INTO users (names, lastnames, birth, id_person, email, pass) VALUES ('$names', '$lastname', '$birth', '$id_person', '$email', '$pass')";
+$sql = "INSERT INTO users (names, lastnames, birth, id_person, email, pass) VALUES ('$names', '$lastnames', '$birth', '$id_person', '$email', '$pass')";
 
 if ($conexion->query($sql) === TRUE) {
-    echo "Registro exitoso";
+    // Registro exitoso, puedes realizar otras acciones aquí si es necesario
 } else {
-    echo "Error al registrar el usuario: " . $conexion->error;
+    // Error al registrar el usuario, puedes realizar otras acciones aquí si es necesario
 }
 
 // Cerrar la conexión a la base de datos

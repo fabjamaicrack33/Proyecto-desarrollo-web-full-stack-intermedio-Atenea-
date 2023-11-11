@@ -50,7 +50,7 @@ header h1 {
     border-radius: 25px;
 }
 
-.btn_login {
+#btn_login {
     background-color: #4cf11a;
     color: #fff;
     border: none;

@@ -1,8 +1,9 @@
 <?php
     include 'db/conexion.php';
 
-    $query = mysqli_query($conexion, "SELECT * FROM usuarios")
+    $query = mysqli_query($conexion, "SELECT * FROM users")
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>Table db </title>
+    <title>My_database </title>
 </head>
 <body>
 <div class="wrapper">
@@ -40,9 +41,13 @@
             <tr  class="myHead">
                 <th>#</th>
                 <th>id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Cédula</th>
+                <th>Names</th>
+                <th>lastnames</th>
+                <th>birth</th>
+                <th>id_person</th>
+                <th>email</th>
+                <th>pass</th>
+
             </tr>
             </thead>
             <tbody>
@@ -51,17 +56,24 @@
             
             while ($datos = mysqli_fetch_array($query)) {
                 $id = $datos['id'];
-                $nombre = $datos['nombre'];
-                $apellido = $datos['apellido'];
-                $cedula = $datos['cedula'];
+                $names = $datos['names'];
+                $lastnames = $datos['lastnames'];
+                $birth = $datos['birth'];
+                $id_person = $datos['id_person'];
+                $email = $datos['email'];
+                $pass = $datos ['pass'];
+
 
                 echo'
                 <tr data-url="FQS7i2z1CoA">
                     <td></td>
                     <td>'.$id.'</td>
-                    <td>'.$nombre.'</td>
-                    <td>'.$apellido.'</td>
-                    <td>'.$cedula.'</td>
+                    <td>'.$names.'</td>
+                    <td>'.$lastnames.'</td>
+                    <td>'.$birth.'</td>
+                    <td>'.$id_person.'</td>
+                    <td>'.$email.'</td>
+                    <td>'.$pass.'</td>
                 </tr>
                 ';
             }
@@ -78,6 +90,6 @@
         </div>
     </div>
 </div>
-    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
 </body>
 </html>

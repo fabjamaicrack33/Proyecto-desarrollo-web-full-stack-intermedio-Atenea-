@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -24,14 +25,14 @@
         </div>
         <div class="cuadro">
             <!-- Tu formulario de registro aquí -->
-            <form action="procesar_R.php" method="POST">
+            <form id="registrationForm" action="db/conexionR.php" method="POST">
                 <div class="form-group">
                     <label for="inputnombres">Nombres</label>
                     <input type="text" class="form-control" name="names" id="inputnombres" placeholder="Digite sus nombres" required>
                 </div>
                 <div class="form-group">
                     <label for="inputapellidos">Apellidos</label>
-                    <input type="text" class="form-control" name="lastname" id="inputapellidos" placeholder="Digite sus Apellidos" required>
+                    <input type="text" class="form-control" name="lastnames" id="inputapellidos" placeholder="Digite sus Apellidos" required>
                 </div>
                 <div class="form-group">
                     <label for="inputfecha_nacimiento">Fecha de Nacimiento</label>
@@ -50,7 +51,7 @@
                     <input type="password" class="form-control" name="pass" id="inputcontra" required>
                 </div>
             <div class="boton">  
-              <button type="submit" class="btn_login">OBTÉN TU PRÉSTAMO</button>
+              <button type="submit" id="btn_login">OBTÉN TU PRÉSTAMO</button>
             </div>
             </form>
         </div>
@@ -85,8 +86,7 @@
             <p>Copywitre © 2023 Credy</p>
         </div>
     </footer>
-    
-
+    <script src="js/script3.js"></script>
 </body>
 
 </html>
